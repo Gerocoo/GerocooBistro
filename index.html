@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerocoo Bistro</title>
+</head>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<nav><div style='float:right; width: 100%;'></div>
+  <nav class = "nav">
+<div class="topnav">
+  <a href="menu.html">Menu</a>
+  <a href="contatti.html">Contatti</a>
+  <a href="storia.html">Chi Siamo</a>
+  <button class="toggle-theme" id="toggle-theme">🌙</button>
+</div>
+
+<br>
+<br>
+<br>
+<a href="index.html"><img src="img/logo.png" alt="Gerocoo Logo" class="logo" style="width: 200px;" /></a>
+<h1 class="titolo"><a href="storia.html">GEROCOO BISTRO</a></h1>
+<div class="carousel">
+  <div class="carousel-cell"><img src="img/1.png" alt="img 1"></div>
+  <div class="carousel-cell"><img src="img/2.jpg" alt="img 2"></div>
+  <div class="carousel-cell"><img src="img/3.jpg" alt="img 3"></div>
+  <div class="carousel-cell"><img src="img/4.jpeg" alt="img 4"></div>
+  <div class="carousel-cell"><img src="img/5.jpg" alt="img 5"></div>
+</div>
+<div class="container">
+<hr />
+</nav>
+<body>
+      <h2 class="orange">Il Ristorante</h2>
+      <p>Il Gerocoo Bistro offre pranzi e cene informali in un'atmosfera alla moda.
+        Il menù cambia regolarmente per mettere in risalto gli ingredienti più freschi.</p>
+      <h2 class="orange">Catering</h2>
+      <p>
+        Divertiti... <em>al cibo pensiamo noi.</em> Gerocoo Catering può gestire eventi che vanno da piccoli rinfreschi
+        per
+        club privati a eleganti raccolte fondi aziendali.
+      </p>
+      <!-- <h2 class="orange">Dove e Quando</h2>
+      <p>Agrigento, Viale della Vittoria 37:<br />
+        Dal <b>lunedì al giovedì</b> dalle 11:00 alle 21:00<br />
+        <b>Venerdì e sabato</b>, dalle 11:00 alle 00:00<br />
+        <b>Domenica</b> chiuso<br /> -->
+      </p>
+    </div>
+    <hr />
+    </nav>
+    <div>
+      <div class="container">
+        <h2 class="orange">Prenota un Tavolo</h2>
+        <br />
+        <form class="form" action="#" method="post">
+          <ul style="list-style: none; padding: 0; text-align: center; max-width: auto; margin: 10px;">
+            <li>
+              <label for="name">Nome per la prenotazione:</label><br />
+              <input type="text" id="name" name="name" required />
+            </li>
+            <li>
+              <label for="dataPrenotazione">Data:</label><br />
+              
+              <input type="date" id="dataPrenotazione" name="date" required />
+            </li>
+            <li>
+              <label for="time">Ora:</label><br />
+              <input type="time" id="time" name="time" required />
+            </li>
+            <li>
+              <label for="guests">Numero di persone:</label><br />
+              <input type="number" id="guests" name="guests" min="1" max="20" required />
+            </li>
+            <li>
+              <label for="contact">Recapito (telefono):</label><br />
+              <input type="tel" id="contact" name="contact" required  placeholder="Es. 333 1234567 o +39 091 1234567"/>
+            </li>
+            <li>
+              <label for="celiachia">Sei Celiaco?</label>
+              <input id="celiachia" type="checkbox" name="celiachia"/>
+            </li>
+            <li>
+              <label for="notes">Note aggiuntive:</label><br />
+              <textarea id="notes" name="notes" rows="3"
+                placeholder="Es. intolleranze, tavolo all’aperto..."></textarea>
+            </li>
+            <li style="text-align: center; margin-top: 10px;">
+              <button type="submit">Invia Prenotazione</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity-fade.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </body>
+
+</html>
