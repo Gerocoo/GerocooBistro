@@ -223,3 +223,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+let lastScrollTop = 0;
+const navbar = document.querySelector('.topnav');
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScrollTop) {
+    // Scroll in giù → nascondi
+    navbar.style.transform = 'translateY(-100%)';
+    navbar.style.transition = 'transform 0.3s ease-out';
+  } else {
+    // Scroll in su → mostra
+    navbar.style.transform = 'translateY(0)';
+    navbar.style.transition = 'transform 0.3s ease-out';
+  }
+
+  lastScrollTop = currentScroll;
+});

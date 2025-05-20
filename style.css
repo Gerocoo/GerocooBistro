@@ -19,7 +19,7 @@
     border-color: #994d00;
     box-sizing: border-box;
     margin-bottom: 40px;
-    margin-top: 80px;
+    margin-top: 60px;
     padding-top:20px;
     border: #333 1px solid;
   }
@@ -99,6 +99,29 @@ body.dark-mode span {
 body.dark-mode label {
   color: #0e0e0e;
 } 
+.form-wrapper {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-wrapper li {
+  margin-bottom: 15px;
+}
+
+.form-wrapper label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-wrapper input,
+.form-wrapper textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
     
 
     
@@ -294,6 +317,7 @@ form button:hover {
 
     .orange {
       color: orange;
+      padding-top: 10px;
     }
 
     .piatto {
@@ -373,10 +397,33 @@ left: 0px;
   border: none;
   cursor: pointer;
   z-index: 1000;
-}body.darkmode .nome {
+}
+
+body.darkmode .nome {
       text-align: left;
       color: #1a1919;
     }
+body.dark-mode .modal-content {
+    background-color: #3f3e3e; /* nero profondo */
+    color: #ffffff; /* testo bianco per contrasto */
+  }
+
+ .modal-content .nav-link:hover {
+  background-color: #f0f0f0;
+}
+  body.dark-mode .modal-header,
+  body.dark-mode .modal-footer {
+    border-color: #2a2a2a; /* bordi scuri */
+  }
+  body.dark-mode .nav-link {
+    color: #1a1919;
+    
+  }
+
+  body.dark-mode .btn-close {
+    filter: invert(1); /* rende visibile il pulsante di chiusura */
+  }
+
 
 #navbar-example2 {
 background-color: #464646;
@@ -436,6 +483,7 @@ background-color: #464646;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+     transition: transform 0.3s ease-out;
   }
 
  .btn-hamburger {

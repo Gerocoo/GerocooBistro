@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gerocoo Bistro</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  integrity="sha512-papmSR5i6Rx3e4+QeOZTnHlLMJQ7u5LOj+YqM0aNcfm3BQ3BSlUn8N+BB69U92t2bFi3p6gS2kOx7uqgUN2MMA=="  crossorigin="anonymous"  referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
   <nav id="navbar-example2" class="topnav">
     <button class="toggle-theme" id="toggle-theme">🌙</button>
     <button class="btn btn-outline-secondary btn-hamburger" type="button" data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">☰</button> 
+      data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">☰</button>
     <ul class="nav nav-pills nav-desktop">
       <li class="nav-item">
         <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#menuModal">Menu</a>
@@ -46,24 +46,21 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
       </div>
       <ul class="nav flex-column">
-          <li class="nav-item"><a class="nav-link" href="#Antipasti">Antipasti</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Primi">Primi</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Secondi">Secondi</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Dolci">Dolci</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Bevande">Bevande</a></li>
-          </ul>
-      </div>
+        <li class="nav-item"><a class="nav-link" href="#Antipasti">Antipasti</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Primi">Primi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Secondi">Secondi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Dolci">Dolci</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Bevande">Bevande</a></li>
+      </ul>
     </div>
   </div>
+</div>
 </div>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <a href="index.html"><img src="img/logo.png" alt="Gerocoo Logo" class="logo" style="width: 200px;" /></a>
-<br>
-<br>
+
 <h1 class="titolo"><a href="storia.html">GEROCOO BISTRO</a></h1>
-<br>
-<br>
 <div class="carousel">
   <div class="carousel-cell"><img src="img/1.png" alt="img 1"></div>
   <div class="carousel-cell"><img src="img/2.jpg" alt="img 2"></div>
@@ -72,278 +69,284 @@
   <div class="carousel-cell"><img src="img/5.jpg" alt="img 5"></div>
 </div>
 <div class="container">
-  
+
   <h4 id="Menu"></h4>
   <p>
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px"
-        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-        <div class="section">
-          <br>
-          <br>
-          <br>
-          <h2 class="orange" id="Antipasti">Antipasti</h2>
-          <br>
-          <div class="piatto">
-            <span class="nome">Bruschetta al Pomodoro
-              <span class="ingredienti">Pane toscano, pomodori, aglio, olio extravergine d’oliva, sale, basilico</span>
-            </span>
-            <span class="prezzo">€6</span>
-          </div>
-          <div class="piatto">
-            <span class="nome">Caponata Siciliana
-              <span class="ingredienti">Melanzane, pomodori San Marzano, cipolle, sedano, olive verdi, capperi, pinoli,
-                aceto di vino bianco, zucchero, basilico, olio extravergine d’oliva</span>
-            </span>
-            <span class="prezzo">€7</span>
-          </div>
-          <div class="piatto">
-            <span class="nome">Carpaccio di Manzo
-              <span class="ingredienti">Fettine sottili di manzo, rucola, scaglie di Parmigiano Reggiano, olio
-                extravergine d’oliva, limone, sale, pepe</span>
-            </span>
-            <span class="prezzo">€8</span>
-          </div>
-        </div>
-        <br>
-        <br>
-        <div class="section">
-          <h2 class="orange" id="Primi">Primi Piatti</h2>
-        
-          <br>
-          <div class="piatto">
-            <span class="nome">Spaghetti alla Carbonara
-              <span class="ingredienti">Spaghetti, guanciale, uova, pecorino romano, pepe nero</span>
-            </span>
-            <span class="prezzo">€12</span>
-          </div>
-          <div class="piatto">
-            <span class="nome">Risotto ai Funghi Porcini
-              <span class="ingredienti">Riso Carnaroli, funghi porcini freschi, scalogno, vino bianco, brodo vegetale,
-                burro, parmigiano grattugiato, prezzemolo, olio extravergine d’oliva, sale, pepe</span>
-            </span>
-            <span class="prezzo">€14</span>
-          </div>
-          <div class="piatto">
-            <span class="nome">Lasagna al Forno
-              <span class="ingredienti">Pasta all’uovo, ragù di carne, besciamella, parmigiano grattugiato, mozzarella,
-                olio extravergine d’oliva, sale, pepe</span>
-            </span>
-            <span class="prezzo">€13</span>
-          </div>
-        </div>
-        <br>
-        <br>
-        <div class="section">
-          <h2 class="orange" id="Secondi">Secondi Piatti</h2>
-          <br>
-          <br>
-          <div class="piatto">
-            <span class="nome">Tagliata di Manzo con Rucola e Parmigiano
-              <span class="ingredienti">Entrecôte di manzo, rucola, scaglie di Parmigiano Reggiano, aceto balsamico di
-                Modena, olio extravergine d’oliva, sale, pepe</span>
-            </span>
-            <span class="prezzo">€18</span>
-          </div>
-          <div class="piatto">
-            <span class="nome">Branzino al Forno con Patate
-              <span class="ingredienti">Branzino, patate, peperoni, zucchine, scalogno, pangrattato, olio extravergine
-                d’oliva, sale, pepe</span>
-            </span>
-            <span class="prezzo">€20</span>
-          </div>
-          <div class="piatto">
-            <span class="nome">Pollo alla Cacciatora
-              <span class="ingredienti">Pollo, pomodori pelati, cipolla, carote, sedano, vino rosso, olio extravergine
-                d’oliva, rosmarino, aglio, sale, pepe</span>
-            </span>
-            <span class="prezzo">€16</span>
-          </div>
-        </div>
-        <div class="section">
-          <h2 class="orange" id="Dolci">Dolci</h2>
-          <div class="piatto">
-            <span class="nome">Tiramisù
-              <span class="ingredienti">Savoiardi, mascarpone, uova, zucchero, caffè espresso, cacao amaro</span>
-            </span>
-            <span class="prezzo">€6</span>
-          </div>
-          <div class="piatto">
-            <span class="nome">Cheesecake ai Frutti di Bosco
-              <span class="ingredienti">Base di pasta frolla (burro, zucchero, uova, farina), crema al formaggio, panna,
-                latte scremato, zucchero, gelatina, frutti di bosco, glassa ai frutti di bosco</span>
-            </span>
-            <span class="prezzo">€6</span>
-          </div>
-          <div class="piatto">
-            <span class="nome">Panna Cotta
-              <span class="ingredienti">Panna fresca, zucchero, baccello di vaniglia, gelatina in fogli</span>
-            </span>
-            <span class="prezzo">€5</span>
-          </div>
-        
-      
-
-   
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px" data-bs-smooth-scroll="true"
+    class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
     <div class="section">
-  <h2 class="orange" id="Bevande">Bevande</h2>
-  <div class="piatto">
-    <span class="nome">Birra dello Stretto
-      <span class="ingredienti">Birra artigianale messinese, 5% vol, gusto pieno e corposo</span>
-    </span>
-    <span class="prezzo">€4</span>
-  </div>
 
-  <div class="piatto">
-    <span class="nome">Vino della Casa (Rosso/Bianco)
-      <span class="ingredienti">Vino locale, servito in caraffa da 0.5L o 1L</span>
-    </span>
-    <span class="prezzo">€6 / €10</span>
-  </div>
+      <h2 class="orange" id="Antipasti">Antipasti</h2>
 
-  <div class="piatto">
-    <span class="nome">Acqua Naturale o Frizzante
-      <span class="ingredienti">Bottiglia da 1L, fredda o temperatura ambiente</span>
-    </span>
-    <span class="prezzo">€2</span>
-  </div>
-  <div class="piatto">
-    <span class="nome">Coca-Cola / Fanta / Sprite
-      <span class="ingredienti">Lattina 33cl</span>
-    </span>
-    <span class="prezzo">€2.50</span>
-  </div>
-  <div class="piatto">
-    <span class="nome">Amaro Siciliano
-      <span class="ingredienti">Digestivo a base di erbe aromatiche dell’isola</span>
-    </span>
-    <span class="prezzo">€3</span>
-  </div>
+      <div class="piatto">
+        <span class="nome">Bruschetta al Pomodoro
+          <span class="ingredienti">Pane toscano, pomodori, aglio, olio extravergine d’oliva, sale, basilico</span>
+        </span>
+        <span class="prezzo">€6</span>
+      </div>
+      <div class="piatto">
+        <span class="nome">Caponata Siciliana
+          <span class="ingredienti">Melanzane, pomodori San Marzano, cipolle, sedano, olive verdi, capperi, pinoli,
+            aceto di vino bianco, zucchero, basilico, olio extravergine d’oliva</span>
+        </span>
+        <span class="prezzo">€7</span>
+      </div>
+      <div class="piatto">
+        <span class="nome">Carpaccio di Manzo
+          <span class="ingredienti">Fettine sottili di manzo, rucola, scaglie di Parmigiano Reggiano, olio
+            extravergine d’oliva, limone, sale, pepe</span>
+        </span>
+        <span class="prezzo">€8</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="orange" id="Primi">Primi Piatti</h2>
+
+
+      <div class="piatto">
+        <span class="nome">Spaghetti alla Carbonara
+          <span class="ingredienti">Spaghetti, guanciale, uova, pecorino romano, pepe nero</span>
+        </span>
+        <span class="prezzo">€12</span>
+      </div>
+      <div class="piatto">
+        <span class="nome">Risotto ai Funghi Porcini
+          <span class="ingredienti">Riso Carnaroli, funghi porcini freschi, scalogno, vino bianco, brodo vegetale,
+            burro, parmigiano grattugiato, prezzemolo, olio extravergine d’oliva, sale, pepe</span>
+        </span>
+        <span class="prezzo">€14</span>
+      </div>
+      <div class="piatto">
+        <span class="nome">Lasagna al Forno
+          <span class="ingredienti">Pasta all’uovo, ragù di carne, besciamella, parmigiano grattugiato, mozzarella,
+            olio extravergine d’oliva, sale, pepe</span>
+        </span>
+        <span class="prezzo">€13</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="orange" id="Secondi">Secondi Piatti</h2>
+
+      <div class="piatto">
+        <span class="nome">Tagliata di Manzo con Rucola e Parmigiano
+          <span class="ingredienti">Entrecôte di manzo, rucola, scaglie di Parmigiano Reggiano, aceto balsamico di
+            Modena, olio extravergine d’oliva, sale, pepe</span>
+        </span>
+        <span class="prezzo">€18</span>
+      </div>
+      <div class="piatto">
+        <span class="nome">Branzino al Forno con Patate
+          <span class="ingredienti">Branzino, patate, peperoni, zucchine, scalogno, pangrattato, olio extravergine
+            d’oliva, sale, pepe</span>
+        </span>
+        <span class="prezzo">€20</span>
+      </div>
+      <div class="piatto">
+        <span class="nome">Pollo alla Cacciatora
+          <span class="ingredienti">Pollo, pomodori pelati, cipolla, carote, sedano, vino rosso, olio extravergine
+            d’oliva, rosmarino, aglio, sale, pepe</span>
+        </span>
+        <span class="prezzo">€16</span>
+      </div>
+    </div>
+    <div class="section">
+      <h2 class="orange" id="Dolci">Dolci</h2>
+      <div class="piatto">
+        <span class="nome">Tiramisù
+          <span class="ingredienti">Savoiardi, mascarpone, uova, zucchero, caffè espresso, cacao amaro</span>
+        </span>
+        <span class="prezzo">€6</span>
+      </div>
+      <div class="piatto">
+        <span class="nome">Cheesecake ai Frutti di Bosco
+          <span class="ingredienti">Base di pasta frolla (burro, zucchero, uova, farina), crema al formaggio, panna,
+            latte scremato, zucchero, gelatina, frutti di bosco, glassa ai frutti di bosco</span>
+        </span>
+        <span class="prezzo">€6</span>
+      </div>
+      <div class="piatto">
+        <span class="nome">Panna Cotta
+          <span class="ingredienti">Panna fresca, zucchero, baccello di vaniglia, gelatina in fogli</span>
+        </span>
+        <span class="prezzo">€5</span>
+      </div>
+
+
+
+
+      <div class="section">
+        <h2 class="orange" id="Bevande">Bevande</h2>
+        <div class="piatto">
+          <span class="nome">Birra dello Stretto
+            <span class="ingredienti">Birra artigianale messinese, 5% vol, gusto pieno e corposo</span>
+          </span>
+          <span class="prezzo">€4</span>
         </div>
-        <div>
-      
 
-    
-  
+        <div class="piatto">
+          <span class="nome">Vino della Casa (Rosso/Bianco)
+            <span class="ingredienti">Vino locale, servito in caraffa da 0.5L o 1L</span>
+          </span>
+          <span class="prezzo">€6 / €10</span>
+        </div>
 
- 
-  <h4 id="Storia"></h4>
-  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
-    data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        <div class="piatto">
+          <span class="nome">Acqua Naturale o Frizzante
+            <span class="ingredienti">Bottiglia da 1L, fredda o temperatura ambiente</span>
+          </span>
+          <span class="prezzo">€2</span>
+        </div>
+        <div class="piatto">
+          <span class="nome">Coca-Cola / Fanta / Sprite
+            <span class="ingredienti">Lattina 33cl</span>
+          </span>
+          <span class="prezzo">€2.50</span>
+        </div>
+        <div class="piatto">
+          <span class="nome">Amaro Siciliano
+            <span class="ingredienti">Digestivo a base di erbe aromatiche dell’isola</span>
+          </span>
+          <span class="prezzo">€3</span>
+        </div>
+      </div>
+      <div>
 
-    <div class="container storia">
-      <br>
-      <br>
-      <h2 class="orange">La Storia del Gerocoo Bistrot: Un Viaggio tra Tradizione e Innovazione</h2>
-      <br>
 
-      <p>Nato dal sogno di un piccolo angolo di autenticità e passione per la cucina, Gerocoo Bistrot è il cuore pulsante
-        di un’idea che mescola tradizione e innovazione. Immagina un luogo dove i sapori del passato si incontrano con le
-        intuizioni culinarie più moderne, creando un'esperienza che nutre non solo il corpo, ma anche l'anima.</p>
 
-      <p>La storia di Gerocoo inizia con un incontro casuale tra amici, che condividevano la stessa visione: un bistrot che
-        fosse più di un semplice ristorante, un luogo dove ogni piatto racconta una storia. Il nome stesso, Gerocoo, nasce
-        da un gioco di parole che richiama un legame speciale con le radici culturali, ma al contempo lascia spazio a
-        un'infinità di interpretazioni, proprio come ogni piatto che serviamo.</p>
 
-      <p>Ogni giorno, la nostra cucina è animata dalla ricerca di ingredienti freschi e genuini, selezionati con cura dai
-        migliori produttori locali. I piatti, preparati con maestria, sono una fusione perfetta di tecniche classiche e
-        audaci esperimenti gastronomici. Ogni portata è pensata per sorprendere e conquistare, senza mai dimenticare le
-        origini e il rispetto per le tradizioni culinarie.</p>
 
-      <p>Al Gerocoo Bistrot, ogni dettaglio è studiato per offrire un'esperienza che va oltre il semplice pasto: un
-        ambiente accogliente, un servizio attento e una selezione di vini che accompagna ogni momento. Vogliamo che ogni
-        cliente si senta a casa, ma che allo stesso tempo viva un'esperienza unica, dove ogni visita è un nuovo viaggio
-        nei sapori.</p>
-    </div>
+
+        <h4 id="Storia"></h4>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+          data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+
+          <div class="container storia">
+
+            <h2 class="orange">La Storia del Gerocoo Bistrot: Un Viaggio tra Tradizione e Innovazione</h2>
+
+
+            <p>Nato dal sogno di un piccolo angolo di autenticità e passione per la cucina, Gerocoo Bistrot è il cuore
+              pulsante
+              di un’idea che mescola tradizione e innovazione. Immagina un luogo dove i sapori del passato si incontrano
+              con le
+              intuizioni culinarie più moderne, creando un'esperienza che nutre non solo il corpo, ma anche l'anima.</p>
+
+            <p>La storia di Gerocoo inizia con un incontro casuale tra amici, che condividevano la stessa visione: un
+              bistrot che
+              fosse più di un semplice ristorante, un luogo dove ogni piatto racconta una storia. Il nome stesso,
+              Gerocoo, nasce
+              da un gioco di parole che richiama un legame speciale con le radici culturali, ma al contempo lascia
+              spazio a
+              un'infinità di interpretazioni, proprio come ogni piatto che serviamo.</p>
+
+            <p>Ogni giorno, la nostra cucina è animata dalla ricerca di ingredienti freschi e genuini, selezionati con
+              cura dai
+              migliori produttori locali. I piatti, preparati con maestria, sono una fusione perfetta di tecniche
+              classiche e
+              audaci esperimenti gastronomici. Ogni portata è pensata per sorprendere e conquistare, senza mai
+              dimenticare le
+              origini e il rispetto per le tradizioni culinarie.</p>
+
+            <p>Al Gerocoo Bistrot, ogni dettaglio è studiato per offrire un'esperienza che va oltre il semplice pasto:
+              un
+              ambiente accogliente, un servizio attento e una selezione di vini che accompagna ogni momento. Vogliamo
+              che ogni
+              cliente si senta a casa, ma che allo stesso tempo viva un'esperienza unica, dove ogni visita è un nuovo
+              viaggio
+              nei sapori.</p>
+          </div>
+        </div>
+
+
+        <h4 id="Chisiamo"></h4>
+
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true"
+          class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+          <div class="container contatti">
+            <h2 class="orange">Dove ci trovi</h2>
+            <div style="display: flex; justify-content: center; margin: 20px 0;">
+              <div style="position: relative; width: 100%; max-width: 600px; aspect-ratio: 4 / 3;">
+                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.404923237614!2d13.58335277466238!3d37.30923503884238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x131082526a318a17%3A0x3982b7c43e0236a2!2sVia%20Roma%2C%2065%2C%2092100%20Agrigento%20AG!5e0!3m2!1sit!2sit!4v1747750082323!5m2!1sit!2sit" style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <div class="container contatti">
+              <h2 class="orange">Contatti</h2>
+              <p><strong>Email:</strong> info@gerocoobistro.com</p>
+              <p><strong>Telefono fisso:</strong> +390911234567</p>
+              <p><strong>Telefono mobile:</strong> +393209876543</p>
+              <div class="social-links" style="margin-top: 20px;">
+    <div style="display: flex; gap: 20px; align-items: center; justify-content: center; margin-top: 20px;">
+  <div>
+    <i class="fab fa-instagram" style="margin-right: 6px;"></i>
+    <a href="https://instagram.com/GerocooBistro" target="_blank"><img src ="img/inst.png" style="width: 35px;"></a>
   </div>
-
-
-  <h4 id="Chisiamo"></h4>
-  
-  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true"
-    class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-    
-
-      
-  <div class="container contatti">
-    <br>
-    <h2 class="orange">Contattaci</h2>
-    <br>
-    <p><strong>Indirizzo:</strong> Via Roma 123, 90100 Agrigento, Italia</p>
-    <p><strong>Email:</strong> info@gerocoobistro.com</p>
-    <br>
-    <h2 class="orange">Telefono</h2>
-    <br>
-    <p><strong>Telefono fisso:</strong> +390911234567</p>
-    <p><strong>Telefono mobile:</strong> +393209876543</p>
-    <br>
-
-    <h2 class="orange">Orari di apertura</h2>
-    <br>
-    
-    <p><strong>Lunedì - Venerdì:</strong> 11:00 - 21:00</p>
-    <p><strong>Sabato:</strong> 11:00 - 00:00</p>
-    <p><strong>Domenica:</strong> Chiuso</p>
+  <div>
+    <i class="fab fa-facebook" style="margin-right: 6px;"></i>
+    <a href="https://facebook.com/GerocooBistro" target="_blank"><img src ="img/facebook.png" style="width: 42px;"></a>
   </div>
-
- 
 </div>
 </div>
-</div>
+              <h2 class="orange">Orari di apertura</h2>
+              <p><strong>Lunedì - Venerdì:</strong> 11:00 - 21:00</p>
+              <p><strong>Sabato - Domenica:</strong> 11:00 - 00:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <div class="container">
-<h4 id="Prenota"></h4>
-<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true"
-    class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-      <br>
-      <br>
-      <br>
-      <h2 class="orange">Prenota un Tavolo</h2>
-      <br />
-      <form class="form" action="#" method="post">
-        <ul style="list-style: none; padding: 0; text-align: center; max-width: auto; margin: 10px;">
-          <li>
-            <label for="name">Nome per la prenotazione:</label><br />
-            <input type="text" id="name" name="name" required />
-          </li>
-          <li>
-            <label for="dataPrenotazione">Data:</label><br />
+      <div class="container">
+        <h4 id="Prenota"></h4>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true"
+          class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+          <h2 class="orange">Prenota un Tavolo</h2>
+          <form class="form" action="#" method="post">
+            <ul class="form-wrapper">
+              <li>
+                <label for="name">Nome per la prenotazione:</label><br />
+                <input type="text" id="name" name="name" required />
+              </li>
+              <li>
+                <label for="dataPrenotazione">Data:</label><br />
 
-            <input type="date" id="dataPrenotazione" name="date" required />
-          </li>
-          <li>
-            <label for="time">Ora:</label><br />
-            <input type="time" id="time" name="time" required />
-          </li>
-          <li>
-            <label for="guests">Numero di persone:</label><br />
-            <input type="number" id="guests" name="guests" min="1" max="20" required />
-          </li>
-          <li>
-            <label for="contact">Recapito (telefono):</label><br />
-            <input type="tel" id="contact" name="contact" required placeholder="Es. 333 1234567 o +39 091 1234567" />
-          </li>
-          <li>
-            <label for="celiachia">Sei Celiaco?</label>
-            <input id="celiachia" type="checkbox" name="celiachia" />
-          </li>
-          <li>
-            <label for="notes">Note aggiuntive:</label><br />
-            <textarea id="notes" name="notes" rows="3" placeholder="Es. intolleranze, tavolo all’aperto..."></textarea>
-          </li>
-          <li style="text-align: center; margin-top: 10px;">
-            <button type="submit">Invia Prenotazione</button>
-          </li>
-        </ul>
-      </form>
-    </div>
-    </div>
-    </body>
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity-fade.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"></script>
+                <input type="date" id="dataPrenotazione" name="date" required />
+              </li>
+              <li>
+                <label for="time">Ora:</label><br />
+                <input type="time" id="time" name="time" required />
+              </li>
+              <li>
+                <label for="guests">Numero di persone:</label><br />
+                <input type="number" id="guests" name="guests" min="1" max="20" required />
+              </li>
+              <li>
+                <label for="contact">Recapito (telefono):</label><br />
+                <input type="tel" id="contact" name="contact" required
+                  placeholder="Es. 333 1234567 o +39 091 1234567" />
+              </li>
+              <li>
+                <label for="celiachia">Sei Celiaco?</label>
+                <input id="celiachia" type="checkbox" name="celiachia" />
+              </li>
+              <li>
+                <label for="notes">Note aggiuntive:</label><br />
+                <textarea id="notes" name="notes" rows="3"
+                  placeholder="Es. intolleranze, tavolo all’aperto..."></textarea>
+              </li>
+              <li style="text-align: center; margin-top: 10px;">
+                <button type="submit">Invia Prenotazione</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      </body>
+      <script src="script.js"></script>
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      <script src="https://unpkg.com/flickity@2/dist/flickity-fade.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
