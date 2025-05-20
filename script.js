@@ -194,3 +194,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+ document.addEventListener('DOMContentLoaded', function () {
+    const offcanvasMenu = document.getElementById('offcanvasMenu');
+    const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasMenu);
+
+    // Gestione link nel menu laterale
+    offcanvasMenu.querySelectorAll('[data-target]').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('data-target');
+        const targetElement = document.querySelector(targetId);
+
+        if (!targetElement) return;
+
+        // Chiudi offcanvas prima dello scroll
+        bsOffcanvas.hide();
+
+        // Dopo che è stato chiuso, fai lo scroll
+        setTimeout(() => {
+          const offset = -60; // modifica in base alla tua navbar
+          const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY + offset;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+
+        }, 300); // Tempo per permettere la chiusura offcanvas
+      });
+    });
+
+    // Quando chiudi con la X, NON si fa nulla: niente href, niente scroll
+  });
