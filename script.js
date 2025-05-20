@@ -76,35 +76,35 @@ function setupValidation() {
 
   // Lista dei campi da validare
   const fields = ['name', 'contact'];
-  
+
   fields.forEach(field => {
     const input = document.getElementById(field);
     if (!input) return; // Salta se l'elemento non esiste
-    
+
     // Evento focus - bordo giallo quando si inizia a digitare
-    input.addEventListener('focus', function() {
+    input.addEventListener('focus', function () {
       this.classList.remove('valid', 'invalid');
     });
-    
+
     // Evento input - validazione durante la digitazione e aggiornamento stato pulsante
-    input.addEventListener('input', function() {
+    input.addEventListener('input', function () {
       // Aggiorna stato pulsante dopo breve ritardo
       setTimeout(validateForm, 100);
     });
-    
+
     // Evento blur - validazione quando si esce dal campo
-    input.addEventListener('blur', function() {
+    input.addEventListener('blur', function () {
       validateField(this, field);
       validateForm(); // Aggiorna stato pulsante
     });
   });
-  
+
   // Applica la validazione iniziale a tutti i campi
   fields.forEach(field => {
     const input = document.getElementById(field);
     if (input) validateField(input, field);
   });
-  
+
   // Verifica iniziale del form
   validateForm();
 }
@@ -135,10 +135,10 @@ function validateField(input, fieldName) {
     input.classList.remove('valid', 'invalid');
     return;
   }
-  
+
   // Verifica la validità usando la regex corrispondente
   const isValid = patterns[fieldName].test(input.value);
-  
+
   // Imposta le classi in base alla validità
   if (isValid) {
     input.classList.add('valid');
@@ -153,39 +153,39 @@ function validateField(input, fieldName) {
 function validateForm() {
   let isValid = true;
   const submitButton = document.querySelector('button[type="submit"]');
-  
+
   // Valida tutti i campi
   Object.keys(patterns).forEach(field => {
     const input = document.getElementById(field);
     if (!input) return;
-    
+
     validateField(input, field);
-    
+
     // Se un campo richiesto non è valido, il form non è valido
-    if (input.hasAttribute('required') && 
-        (!input.value || !patterns[field].test(input.value))) {
+    if (input.hasAttribute('required') &&
+      (!input.value || !patterns[field].test(input.value))) {
       isValid = false;
     }
   });
-  
+
   // Abilita/disabilita il pulsante di submit in base alla validità
   if (submitButton) {
     submitButton.disabled = !isValid;
     submitButton.style.opacity = isValid ? '1' : '0.5';
     submitButton.style.cursor = isValid ? 'pointer' : 'not-allowed';
   }
-  
+
   return isValid;
 }
 
 // Aggiungi la funzione di validazione quando il DOM è caricato
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   setupValidation();
-  
+
   // Aggiungi validazione al form
   const form = document.querySelector('form.form');
   if (form) {
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', function (e) {
       // Impedisci l'invio se la validazione fallisce
       if (!validateForm()) {
         e.preventDefault();
@@ -195,36 +195,31 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
- document.addEventListener('DOMContentLoaded', function () {
-    const offcanvasMenu = document.getElementById('offcanvasMenu');
-    const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasMenu);
-
-    // Gestione link nel menu laterale
-    offcanvasMenu.querySelectorAll('[data-target]').forEach(link => {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        const targetId = this.getAttribute('data-target');
-        const targetElement = document.querySelector(targetId);
-
-        if (!targetElement) return;
-
-        // Chiudi offcanvas prima dello scroll
-        bsOffcanvas.hide();
-
-        // Dopo che è stato chiuso, fai lo scroll
-        setTimeout(() => {
-          const offset = -60; // modifica in base alla tua navbar
-          const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY + offset;
-
-          window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
-          });
-
-        }, 300); // Tempo per permettere la chiusura offcanvas
-      });
+document.querySelectorAll('#offcanvasMenu .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const offcanvasEl = document.querySelector('#offcanvasMenu');
+      const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl) || new bootstrap.Offcanvas(offcanvasEl);
+      offcanvas.hide();
     });
-
-    // Quando chiudi con la X, NON si fa nulla: niente href, niente scroll
   });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuModal = document.getElementById('menuModal');
+  const menuLinks = menuModal.querySelectorAll('.nav-link');
+
+  menuLinks.forEach(link => {
+    
+    link.addEventListener('click', () => {
+
+      const modal = bootstrap.Modal.getInstance(menuModal) || new bootstrap.Modal(menuModal);
+      modal.hide();
+
+
+      document.body.classList.remove('modal-open');
+      const backdrops = document.querySelectorAll('.modal-backdrop');
+      backdrops.forEach(b => b.remove());
+      document.body.style.removeProperty('padding-right');
+      bsOffcanvas.hide();
+    });
+  });
+});
