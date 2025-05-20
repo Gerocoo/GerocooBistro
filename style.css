@@ -75,6 +75,7 @@
 .offcanvas .nav-link:hover {
   background-color: #f0f0f0;
 }
+
     
 body.dark-mode .offcanvas.offcanvas-start {
   background-color: #222;
@@ -158,9 +159,9 @@ body.dark-mode label {
   }
   .container.storia {
   text-align: left;
-  max-width: 800px;
+  
   margin: auto;
-  padding: 1rem;
+  
 }
 
 .container.storia p {
@@ -207,6 +208,7 @@ body.dark-mode label {
     width: 100px;
     margin-bottom: 10px;
     box-shadow: 10px 10px 5px #af9797;
+    
   }
 
   .logopiccolo {
@@ -217,8 +219,10 @@ body.dark-mode label {
   
   h1 {
     font-size: 24px;
+
     font-weight: normal;
     margin: 10px 0;
+    margin-top : 30px;
 
   }
   
@@ -400,11 +404,18 @@ body.darkmode .nome {
       text-align: left;
       color: #1a1919;
     }
-body.dark-mode .modal-content {
-    background-color: #3f3e3e; /* nero profondo */
-    color: #ffffff; /* testo bianco per contrasto */
+.nav-link {
+    color: hsl(0, 0%, 0%);
+    
   }
+.nav-link:hover {
+  background-color: hsl(0, 0%, 20%);
+}
 
+.modal-content {
+    background-color: hsl(0, 0%, 100%); 
+    color: #000000; 
+  }
  .modal-content .nav-link:hover {
   background-color: #f0f0f0;
 }
