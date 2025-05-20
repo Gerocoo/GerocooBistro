@@ -242,6 +242,8 @@ body.dark-mode label {
   .orange {
     color: #cc6600;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 15px;
+    padding-top: 10px;
   }
 
   
@@ -313,11 +315,6 @@ form button:hover {
 
     .section {
       margin-bottom: 20px;
-    }
-
-    .orange {
-      color: orange;
-      padding-top: 10px;
     }
 
     .piatto {
