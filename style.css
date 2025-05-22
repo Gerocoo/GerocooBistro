@@ -394,6 +394,11 @@ left: 0px;
   cursor: pointer;
   z-index: 1000;
 }
+body.darkmode .scrollspy-example {
+  background-color: #242424;
+  
+}
+
 
 body.darkmode .nome {
       text-align: left;
@@ -464,7 +469,9 @@ background-color: #464646;
     display: block;
     content: url("img/logodark.png");
   }
-
+body.dark-mode p {
+   color: white;
+  }
     
     /* Responsive: sotto i 600px */
     @media (max-width: 680px) {
