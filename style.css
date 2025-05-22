@@ -462,6 +462,7 @@ background-color: #464646;
     filter: drop-shadow(5px 7px 5px rgba(0, 0, 0, 0.8)); /* ombra bordeaux */
     background: transparent;
     display: block;
+    content: url("img/logodark.png");
   }
 
     
