@@ -203,20 +203,13 @@ body.dark-mode label {
   margin: 5px 0;
 }
 
-  
-  .logo {
-    width: 100px;
-    margin-bottom: 10px;
-    box-shadow: 10px 10px 5px #af9797;
-    
+ .logo {
+    width: 250px;
+    filter: drop-shadow(5px 7px 5px rgba(54, 52, 52, 0.8)); /* ombra bordeaux */
+    background: transparent;
+    display: block;
   }
 
-  .logopiccolo {
-    float : left;
-    margin-top: 10px;
-    margin-left: 5px;
-  }
-  
   h1 {
     font-size: 24px;
 
@@ -225,6 +218,7 @@ body.dark-mode label {
     margin-top : 30px;
 
   }
+  
   
   hr {
     margin: 20px 0;
@@ -363,6 +357,7 @@ body.dark-mode header {
   background-color: #1e1e1e;
 }
 
+
 body.dark-mode .topnav {
  background-color: #464646;
   box-shadow: none;
@@ -463,9 +458,13 @@ background-color: #464646;
     }
 
     body.dark-mode .logo {
-     box-shadow: none;
-    }
+    width: 250px;
+    filter: drop-shadow(5px 7px 5px rgba(0, 0, 0, 0.8)); /* ombra bordeaux */
+    background: transparent;
+    display: block;
+  }
 
+    
     /* Responsive: sotto i 600px */
     @media (max-width: 680px) {
       .nav-desktop {
