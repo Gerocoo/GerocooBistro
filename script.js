@@ -1,3 +1,4 @@
+
 window.addEventListener('DOMContentLoaded', () => {
   const oggi = new Date();
   const anno = oggi.getFullYear();
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     contain: true,
     wrapAround: true,
     autoPlay: 3000,
-    pauseAutoPlayOnHover: true,
+    pauseAutoPlayOnHover: false,
     prevNextButtons: false,
     pageDots: false,
   });
@@ -242,3 +243,4 @@ window.addEventListener('scroll', () => {
 
   lastScrollTop = currentScroll;
 });
+
