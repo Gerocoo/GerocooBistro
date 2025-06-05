@@ -32,17 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 let prova = document.querySelector(".form").addEventListener("submit", function (e) {
   e.preventDefault();
   console.log(prova);
-  const datiPrenotazione = {
-    nome: document.getElementById("name").value,
-    data: document.getElementById("dataPrenotazione").value,
-    ora: document.getElementById("time").value,
-    numeroPersone: document.getElementById("guests").value,
-    recapito: document.getElementById("contact").value,
-    celiaco: document.getElementById("celiachia").checked,
-    note: document.getElementById("notes").value
-  };
-
-  alert("Dati prenotazione:\n" + JSON.stringify(datiPrenotazione, null, 2));
+  
 });
 
 const toggleButton = document.getElementById('toggle-theme');
@@ -243,4 +233,21 @@ window.addEventListener('scroll', () => {
 
   lastScrollTop = currentScroll;
 });
+
+const logo = document.getElementById('animatedLogo');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Riavvia animazione rimuovendo e riaggiungendo la classe
+      logo.classList.remove('logo');
+      void logo.offsetWidth; // Trigger reflow
+      logo.classList.add('logo');
+    }
+  });
+}, {
+  threshold: 0.3 // almeno il 50% dell’elemento visibile
+});
+
+observer.observe(logo);
 

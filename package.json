@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/Gerocoo/jordan#readme",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
-    "flickity": "^3.0.0"
+    "flickity": "^3.0.0",
+    "pg": "^8.16.0"
   },
   "description": ""
 }
