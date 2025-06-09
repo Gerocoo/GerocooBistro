@@ -60,20 +60,22 @@
   z-index: 1000;
 }
 .offcanvas.offcanvas-start {
-  background-color: #fff; /* sfondo chiaro */
-  color: #000;            /* testo nero */
-  width: 240px;           /* imposta una larghezza più contenuta */
+  background-color: #fff; 
+  color: #000;            
+  width: 240px;           
 }
 
-/* Rende i link coerenti con la navbar desktop */
+
 .offcanvas .nav-link {
   color: #000;
-  padding-left: 1.5rem; /* allineamento coerente con i link della navbar */
-  font-size: 1rem;
+  padding-left: 1.5rem;
+  font-size: 28px;
+  
 }
 
 .offcanvas .nav-link:hover {
   background-color: #f0f0f0;
+  border-radius: 5px;
 }
 
     
@@ -428,14 +430,20 @@ body.darkmode .nome {
   }
 .nav-link:hover {
   background-color: hsl(0, 0%, 20%);
+  border-radius: 5px;
 }
 
 .modal-content {
     background-color: hsl(0, 0%, 100%); 
-    color: #000000; 
+    color: #000000;
+     padding: 1.5rem; 
   }
  .modal-content .nav-link:hover {
   background-color: #f0f0f0;
+  border-radius: 5px;
+  color: black;
+  
+   
 }
   body.dark-mode .modal-header,
   body.dark-mode .modal-footer {
@@ -445,6 +453,14 @@ body.darkmode .nome {
     color: #1a1919;
     
   }
+   body.dark-mode .modal-content {
+        background-color: #3f3e3e;
+        color: #050505;
+  }
+  body.dark-mode.modal-content .nav-link:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
 
   body.dark-mode .btn-close {
     filter: invert(1); /* rende visibile il pulsante di chiusura */
@@ -489,6 +505,9 @@ background-color: #464646;
   }
 body.dark-mode p {
    color: white;
+  }
+  body.dark-mode .dafarenero {
+   color: rgb(2, 2, 2);
   }
     
     /* Responsive: sotto i 600px */
