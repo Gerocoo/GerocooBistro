@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const dotenv = require('dotenv');
 const PG = require('pg');
-const { encrypt } = require('./cripto'); // <-- il tuo modulo crittografia
+const { encrypt } = require('./cripto');
 
 dotenv.config();
 const app = express();
